@@ -1,4 +1,4 @@
- ## Spam Classifier Evaluation – Initial Test Results
+# Spam Classifier Evaluation – Initial Test Results
 
 I tested the spam classifier using six sample emails: three labeled as spam and three as ham. The classifier correctly identified all three ham emails as non-spam, which is good and indicates that it's not overfitting toward false positives on legitimate messages. However, out of the three spam emails, it only correctly flagged the first one (subject: "Congratulations! You’ve WON a $1000 Gift Card!") as spam. The other two spam messages—one about making money from home and one pretending to be a bank alert—were incorrectly classified as non-spam. This suggests the model might be overfitting to obvious promotional cues (like "You've won" or gift cards) and missing more subtle or less stereotypical spam types, such as phishing scams or financial deception.
 
