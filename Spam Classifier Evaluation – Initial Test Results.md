@@ -17,4 +17,5 @@ The correct answers for each training example. For every email in my training da
 ## Predictions:
 What the model guesses for new emails it's never seen before. After training on thousands of examples, when I give it a fresh email, it looks at the features and says "based on what I learned, I think this is 85% likely to be spam." The prediction is its best guess using the patterns it found during training.
 
-## My Understanding: The model basically learned to be a really fast pattern-matching machine that can spot spam clues I might miss.
+## My Understanding: 
+The model basically learned to be a really fast pattern-matching machine that can spot spam clues I might miss.
