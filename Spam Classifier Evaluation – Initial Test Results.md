@@ -4,17 +4,17 @@ I tested the spam classifier using six sample emails: three labeled as spam and 
 
 I haven't encountered any error messages. Everything seems to run fine.
 
-## Notes on Key Concepts
-# Training Data:
+# Notes on Key Concepts
+## Training Data:
 This is all the example emails I fed to the model so it could learn patterns. Like showing a kid hundreds of pictures of cats and dogs with labels so they can recognize new ones. For spam detection, I gave it tons of emails that were already marked as "spam" or "not spam" so it could figure out what makes something spam.
 
-# Features:
+## Features:
 These are the specific things the model looks at in each email to make decisions. Instead of reading the whole email like a human, it counts stuff like how many times words appear ("free" shows up 3 times, "money" shows up 5 times). It's like teaching someone to spot spam by saying "look for these specific clues" rather than "just read it and guess."
 
-# Labels:
+## Labels:
 The correct answers for each training example. For every email in my training data, I had to tell the model "this one is spam" (label = 0) or "this one is not spam" (label = 1). Without these correct answers, the model would have no way to know if it was learning the right patterns.
 
-# Predictions:
+## Predictions:
 What the model guesses for new emails it's never seen before. After training on thousands of examples, when I give it a fresh email, it looks at the features and says "based on what I learned, I think this is 85% likely to be spam." The prediction is its best guess using the patterns it found during training.
 
-## My Understanding: The model basically learned to be a really fast pattern-matching machine that can spot spam clues I might miss.
+# My Understanding: The model basically learned to be a really fast pattern-matching machine that can spot spam clues I might miss.
