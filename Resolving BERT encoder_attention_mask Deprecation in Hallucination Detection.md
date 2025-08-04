@@ -2,7 +2,7 @@
 ## The Problem
 I encountered this warning when trying to encode the dictionarys Key: Value pairs and running code with a BERT model:
 ```console
-  FutureWarning: encoder_attention_mask is deprecated and will be removed in version 4.55.0 for BertSdpaSelfAttention.forward.
+FutureWarning: encoder_attention_mask is deprecated and will be removed in version 4.55.0 for BertSdpaSelfAttention.forward.
 ```
 Initially, I suspected an issue with my code, but I wasn't using encoder_attention_mask anywhere explicitly. The root cause turned out to be the tokenizer's behavior when processing two separate inputs:
 ```console
