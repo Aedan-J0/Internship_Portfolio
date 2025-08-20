@@ -19,12 +19,12 @@ My goal is to experiment with different approaches to see if I can score AI resp
 
 The bulk of the work right now is around data handling and model experimentation. I’m:
 
-Cleaning and formatting training data so it’s usable
+* Cleaning and formatting training data so it’s usable
 
-Testing different models to detect hallucinations (factual errors, misleading statements, etc.)
+* Testing different models to detect hallucinations (factual errors, misleading statements, etc.)
 
-Comparing their performance and doing error analysis
+* Comparing their performance and doing error analysis
 
-Building simple visualizations (charts, graphs) to make results easy to understand
+* Building simple visualizations (charts, graphs) to make results easy to understand
 
 This is still local and experimental, so I’m not worrying about things like real-time latency or scaling to lots of users. Instead, my focus is just on building something that works reasonably well and shows whether the idea has potential.
