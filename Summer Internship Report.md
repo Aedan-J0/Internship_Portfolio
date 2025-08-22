@@ -41,4 +41,4 @@ Built a clearer scoring system with benchmarks to measure trustworthiness more c
 
 Improved the visualizations into a small dashboard that could showcase patterns in real time.
 
-With more time, both projects could evolve into tools that are not just prototypes, but also practical resources for analyzing and improving AI reliability.
+Implemented cosine similarity to take a user’s question, compare it against a dictionary of pre-written question–answer pairs, and automatically return the closest match. This would bridge the gap between free-form input and structured responses, making the system more useful in practice.
