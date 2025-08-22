@@ -72,50 +72,50 @@ Develop a proof-of-concept system to detect when an AI model is “hallucinating
 ## Reflection
 ### What Actually Came to Fruition
 
-A working Email Spam Classifier that completed the full ML workflow.
+* A working Email Spam Classifier that completed the full ML workflow.
 
-A Hallucination Detection prototype that could score model responses and generate visualizations.
+* A Hallucination Detection prototype that could score model responses and generate visualizations.
 
 ### What Impediments Did I Face?
 
-SSL errors preventing Hugging Face model downloads.
+* SSL errors preventing Hugging Face model downloads.
 
-Frequent deprecation warnings and version issues in Transformers.
+* Frequent deprecation warnings and version issues in Transformers.
 
-Data handling mistakes in Python (especially with dictionaries).
+* Data handling mistakes in Python (especially with dictionaries).
 
-Conceptual ambiguity in defining hallucinations.
+* Conceptual ambiguity in defining hallucinations.
 
 ### What Was Easy to Grasp?
 
-The spam classifier workflow (preprocessing, training, testing).
+* The spam classifier workflow (preprocessing, training, testing).
 
-Tokenization and padding once I saw how models required consistent inputs.
+* Tokenization and padding once I saw how models required consistent inputs.
 
-Visualization with charts and graphs to make model results easier to understand.
+* Visualization with charts and graphs to make model results easier to understand.
 
 ### With Additional Time, Where Would I Like to See This Go?
 
-Spam Classifier: Experiment with different feature extraction methods and hyperparameters to improve accuracy.
+* Spam Classifier: Experiment with different feature extraction methods and hyperparameters to improve accuracy.
 
-Hallucination Detector:
+* Hallucination Detector:
 
-Expand dataset with more examples.
+  * Expand dataset with more examples.
 
-Explore advanced model architectures and ensembles.
+  * Explore advanced model architectures and ensembles.
 
-Build a clearer, benchmarked scoring system.
+  * Build a clearer, benchmarked scoring system.
 
-Turn results into a simple interactive dashboard.
+  * Turn results into a simple interactive dashboard.
 
-Implement cosine similarity to take a user’s question, compare it against a dictionary of pre-written question–answer pairs, and automatically return the closest match. This would make the system more practical by bridging free-form input with structured responses.
+  * Implement cosine similarity to take a user’s question, compare it against a dictionary of pre-written question–answer pairs, and automatically return the closest match. This would make the system more practical by bridging free-form input with structured responses.
 
 ## Key Takeaways
 
-Gained experience with the end-to-end machine learning workflow, from preprocessing to evaluation.
+- Gained experience with the end-to-end machine learning workflow, from preprocessing to evaluation.
 
-Improved at debugging and adapting when libraries broke or systems failed.
+- Improved at debugging and adapting when libraries broke or systems failed.
 
-Learned to problem-solve creatively, like bypassing SSL errors by switching to local models.
+- Learned to problem-solve creatively, like bypassing SSL errors by switching to local models.
 
-Developed more confidence tackling open-ended AI problems with no single “right” solution.
+- Developed more confidence tackling open-ended AI problems with no single “right” solution.
