@@ -1,30 +1,121 @@
-# LLM Hallucination Detection
-What This Project Is About
+# Internship Documentation
+## Overview
 
-This is an exploratory project I’m working on during my internship. The idea is to build a system that can flag when an AI model is “hallucinating” — in other words, when it produces answers that sound confident but aren’t accurate. Right now, I’m only developing and testing it locally on my computer. It’s not a finished application or meant for consumer use yet — just a proof-of-concept.
+This summer I worked on two projects that strengthened my skills in Python, data handling, and applied machine learning. The first was an Email Spam Classifier, which gave me a foundation in the full workflow of training and testing models. The second was an AI Hallucination Detection prototype, a more exploratory project focused on identifying when large language models produce inaccurate but confident-sounding responses.
 
-## Goals
+Both projects were functional at a proof-of-concept level. The focus was on learning workflows, troubleshooting problems, and exploring approaches that could be expanded with more time.
 
-My goal is to experiment with different approaches to see if I can score AI responses based on their reliability. The scoring system would ideally range from 0 to 100, where higher numbers mean more trustworthy answers. Since this is still early, I’m mainly focused on:
+## Project 1: Email Spam Classifier
 
-* Cleaning and preparing data to train on
+### Goal:
 
-* Trying different modeling techniques to see what works best
+Train a model to classify email messages as either spam or not spam.
 
-* Measuring accuracy and figuring out common error patterns
+### What I Did:
 
-* Documenting what I learn along the way
+* Preprocessed text data and extracted numerical features.
 
-## Plan
+* Split data into training and testing sets.
 
-The bulk of the work right now is around data handling and model experimentation. I’m:
+* Trained the model using model.fit(X_train_features, Y_train).
 
-* Cleaning and formatting training data so it’s usable
+* Focused on completing the machine learning pipeline, even with a basic setup.
 
-* Testing different models to detect hallucinations (factual errors, misleading statements, etc.)
+### Challenges:
 
-* Comparing their performance and doing error analysis
+* Limited understanding of how to adjust which features the model learned from.
 
-* Building simple visualizations (charts, graphs) to make results easy to understand
+* Needed to figure out how to experiment with different training inputs and parameters.
 
-This is still local and experimental, so I’m not worrying about things like real-time latency or scaling to lots of users. Instead, my focus is just on building something that works reasonably well and shows whether the idea has potential.
+### Outcome:
+
+* Built a functional spam classifier.
+
+* Learned the end-to-end workflow of training/testing models.
+
+* Created a foundation that made it easier to take on more complex projects.
+
+## Project 2: AI Hallucination Detection
+
+### Goal:
+
+Develop a proof-of-concept system to detect when an AI model is “hallucinating” — generating answers that sound correct but are inaccurate.
+
+### What I Did:
+
+* Cleaned and formatted training data.
+
+* Applied tokenization and padding so models could process text consistently.
+
+* Experimented with different modeling approaches to score responses on a 0–100 reliability scale.
+
+* Ran error analysis and built visualizations to track performance.
+
+### Challenges and Solutions:
+
+ * Hugging Face SSL Error: Models would not download due to SSL issues. I solved this by downloading models locally and pointing the code to the local path.
+
+* Deprecation warnings and unused weights: Learned how to update code to match library changes.
+
+* Data handling mistakes: Accidentally wiped dictionaries, which helped me understand how Python manages objects and references.
+
+* Defining hallucinations: Learned that “wrong” isn’t always clear-cut, so evaluation had to be flexible.
+
+### Outcome:
+
+* Built a working prototype capable of testing multiple models and comparing results.
+
+* Created graphs to visualize error patterns.
+
+* Documented the workflow to keep track of progress and share learnings.
+
+## Reflection
+### What Actually Came to Fruition
+
+* A working Email Spam Classifier that completed the full ML workflow.
+
+* A Hallucination Detection prototype that could score model responses and generate visualizations.
+
+### What Impediments Did I Face?
+
+* SSL errors preventing Hugging Face model downloads.
+
+* Frequent deprecation warnings and version issues in Transformers.
+
+* Data handling mistakes in Python (especially with dictionaries).
+
+* Conceptual ambiguity in defining hallucinations.
+
+### What Was Easy to Grasp?
+
+* The spam classifier workflow (preprocessing, training, testing).
+
+* Tokenization and padding once I saw how models required consistent inputs.
+
+* Visualization with charts and graphs to make model results easier to understand.
+
+### With Additional Time, Where Would I Like to See This Go?
+
+* Spam Classifier: Experiment with different feature extraction methods and hyperparameters to improve accuracy.
+
+* Hallucination Detector:
+
+  * Expand dataset with more examples.
+
+  * Explore advanced model architectures and ensembles.
+
+  * Build a clearer, benchmarked scoring system.
+
+  * Turn results into a simple interactive dashboard.
+
+  * Implement cosine similarity to take a user’s question, compare it against a dictionary of pre-written question–answer pairs, and automatically return the closest match. This would make the system more practical by bridging free-form input with structured responses.
+
+## Key Takeaways
+
+- Gained experience with the end-to-end machine learning workflow, from preprocessing to evaluation.
+
+- Improved at debugging and adapting when libraries broke or systems failed.
+
+- Learned to problem-solve creatively, like bypassing SSL errors by switching to local models.
+
+- Developed more confidence tackling open-ended AI problems with no single “right” solution.
