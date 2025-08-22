@@ -39,7 +39,7 @@ Train a model to classify email messages as either spam or not spam.
 
 ### Goal:
 
-Develop a proof-of-concept system to detect when an AI model is “hallucinating” — generating answers that sound correct but are inaccurate.
+Develop a proof of concept system to detect when an AI model is “hallucinating” (generating answers that sound correct but are inaccurate) as well as gives a confidence score of 0-100 regaring how confident the LLM's output is. It also gives an asessment on it.
 
 ### What I Did:
 
@@ -83,8 +83,6 @@ Develop a proof-of-concept system to detect when an AI model is “hallucinating
 * Frequent deprecation warnings and version issues in Transformers.
 
 * Data handling mistakes in Python (especially with dictionaries).
-
-* Conceptual ambiguity in defining hallucinations.
 
 ### What Was Easy to Grasp?
 
